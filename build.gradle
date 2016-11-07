@@ -16,9 +16,10 @@ apply plugin: 'spring-boot'
 apply plugin: 'war'
 
 
+
 war {
-	baseName = 'springboot-web-gradle'
-	version = '0.0.2-SNAPSHOT'
+	baseName = 'FMA1'
+	//version = '0.0.2-SNAPSHOT'
 }
 
 sourceCompatibility = 1.8
@@ -37,6 +38,7 @@ dependencies {
 springBoot {
     mainClass = "fma.FmaApplication"
 }
+
 
 task wrapper(type: Wrapper) {
     gradleVersion = "3.1"
