@@ -36,7 +36,7 @@ dependencies {
 }
 
 springBoot {
-    mainClass = "fma.FmaApplication"
+    mainClass = "com.fma.FmaApplication"
 }
 
 
