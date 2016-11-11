@@ -31,7 +31,21 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-web')
+	ext {
+        tilesVersion = "3.0.7"
+        jstlVersion = "1.2"
+        springBootVersion = "1.4.0.RELEASE"
+    }
+	// Spring Boot
+	compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+	
+	// Tiles
+	compile("org.apache.tiles:tiles-jsp:${tilesVersion}")
+	
+	// JSTL
+	compile("javax.servlet:jstl:${jstlVersion}")
+	
+	providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
